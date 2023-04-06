@@ -1,0 +1,7 @@
+Do something in this scene to upgrade skills.
+
+You have ${skillpoints} Skill Points to spend:
+
+*comment Choose how many to spend on each category, and then do them one at a time?  Also, implementing a Redo button for each category?
+
+*finish Adding in a quiz?
