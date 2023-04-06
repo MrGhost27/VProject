@@ -1,0 +1,50 @@
+In this scene you will determine Duncan's bloodline, and basic stats.
+
+*if (chargenfin)
+    *goto statsDone
+
+*choice
+    #Ventrue - Officious and regal.  All business and ambition.
+        *goto A
+    #Brujah - Rebelious radicals of thought and action.
+        *goto A
+    #Malkavian - Sensitive in the extreme.  Highly perceptive.
+        *goto A
+    #Toreador - Devoted to beauty.
+        *goto A
+    #Tremere - Students of the arcane, including blood magic.
+        *goto A
+    #Nosferatu - Known for their cursed appearance and ability to hide.
+        *goto A
+    
+*label A
+To be implemented.
+    
+*page_break Attributes
+
+On this page you will determine Duncan's attributes:
+
+*temp statpoints 7
+
+*label assignstats
+
+*if (statpoints < 1)
+    *goto statsDone
+*else
+    *goto assignStatPoint
+
+*label assignStatPoint
+*choice
+    #Strength
+        *goto B
+    #Dexterity
+        *goto B
+    #Stamina
+        *goto B
+
+*label statsDone
+You've assigned all stats.
+*set chargenfin = true
+
+*label B
+To be implemented.

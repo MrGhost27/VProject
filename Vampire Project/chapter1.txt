@@ -1,0 +1,3 @@
+The story begins with the our Duncan choices…
+
+*goto_scene ending
