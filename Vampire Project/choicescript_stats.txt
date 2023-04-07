@@ -1,5 +1,7 @@
 Protagonist: ${name}
 
+Clan: ${clan}
+
 Attributes:
 *stat_chart
     text Strength
@@ -58,6 +60,7 @@ Mental Skills:
     text s_science Science
     text s_technology Technology
 *line_break
+
 *page_break Disciplines
 
 You have no disciplines.  You don't know Kung Fu.

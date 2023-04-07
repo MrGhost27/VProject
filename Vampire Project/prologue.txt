@@ -1,7 +1,9 @@
 Late evening, City of York. Not so long ago.
 
-*image cliffordstower.png
-The wind howled, deafening, and the rain lashed, mercilessly, for what felt like hours.  Duncan was feeling miserable.  He stood outside on this dreadful night, waiting for the enormous wooden gates to finally permit him entrance to Clifford's Tower.  His favourite leather jacket had lasted him his whole life, and continued to look cool even after his undeath.  But as a waterproof garment it under-performed.   Duncan couldn't generate any body heat of his own so he felt the cold seep through his muscles and joints, deep into his bones.
+*image images\cliffordstower.png
+*sound sounds\heavy-rain-nature-sounds-8186.mp3
+
+The wind howled, deafening, and the rain lashed, mercilessly, for what felt like hours.  Duncan was feeling miserable.  He stood outside on this dreadful night, waiting for the enormous wooden gates to finally permit him entrance to Clifford's Tower.  His favourite leather jacket had lasted him his whole life, and continued to look cool even into his undeath.  But as a waterproof garment it under-performed.   Duncan couldn't generate any body heat of his own so he felt the cold seep through his muscles and joints, deep into his bones.
 
 Inside the impenetrable doors awaited the Prince of the city.  Leader of all the vampires of York and the surrounding area.  Prince Allen was relatively young for the role, but very few dared share that observation.  He was an expert at guiding the vampires of the city towards their main aim.  Maintaining the Masquerade.  The easily believable myth that humans are alone in the universe.  The pursuit of that aim, meant that vampire unlife could only be created, and indeed maintained, with the express permission of the Prince.
 
@@ -9,4 +11,4 @@ This was the reason Duncan was stood before these doors.  Awaiting the Prince's 
 
 The deep, loud knocking of the locking bar caused Duncan's mind to go blank.  It was now time to face judgement…
 
-*page_break Some time earlier...
+*finish Some time earlier...

@@ -7,27 +7,29 @@
     prologue
     background
     charactergen
+    upgradeskills
     chapter1
     ending
 
 *comment Create Character Generic Game Stats
 *create name "Duncan"
-*create chargenfin false
 *create gold 0
+*create skillpoints 0
 *create backpack false
+*create clan "Caitiff"
 
 *comment attributes
-*create strength 0
-*create dexterity 0
-*create stamina 0
+*create strength 1
+*create dexterity 1
+*create stamina 1
 
-*create charisma 0
-*create manipulation 0
-*create composure 0
+*create charisma 1
+*create manipulation 1
+*create composure 1
 
-*create intelligence 0
-*create wits 0
-*create resolve 0
+*create intelligence 1
+*create wits 1
+*create resolve 1
 
 *comment Physical skills
 *create s_athletics 0
