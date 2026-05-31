@@ -4,7 +4,7 @@ In this scene you will determine Duncan's bloodline, and basic stats.
 *choice
     #Ventrue - Officious and regal.  All business and ambition.
         *goto Ventrue
-    #Brujah - Rebelious radicals of thought and action.
+    #Brujah - Rebellious radicals of thought and action.
         *goto Brujah
     #Malkavian - Sensitive in the extreme.  Highly perceptive.
         *goto Malkavian
@@ -14,42 +14,94 @@ In this scene you will determine Duncan's bloodline, and basic stats.
         *goto Tremere
     #Nosferatu - Known for their cursed appearance and ability to hide.
         *goto Nosferatu
-    
-*comment ToDo:  Implement clan disciplines
+
 *label Ventrue
-You have chosen to become Ventrue.
 *set clan "Ventrue"
+Your sire saw something commanding in you. The Ventrue prize control — of others, of situations, of themselves. Your in-clan Disciplines are Dominate, Fortitude, and Presence.
+
+Which comes most naturally to you?
+*choice
+    #Dominate - The power to bend minds and issue irresistible commands.
+        *set d_dominate true
+    #Fortitude - Supernatural resilience. You endure what would destroy others.
+        *set d_fortitude true
+    #Presence - You draw the eye. Emotions bend toward you like iron to a magnet.
+        *set d_presence true
 *goto A
 
 *label Brujah
-You have chosen to become Brujah.
 *set clan "Brujah"
+The Brujah were philosophers once. Now they are warriors, activists, and rebels. They fight for causes — even when they've forgotten what the cause was. Your in-clan Disciplines are Celerity, Potence, and Presence.
+
+Which comes most naturally to you?
+*choice
+    #Celerity - Blinding speed. You move before others have finished thinking.
+        *set d_celerity true
+    #Potence - Crushing strength. Doors, bones, and wills yield to you.
+        *set d_potence true
+    #Presence - You draw the eye. Emotions bend toward you like iron to a magnet.
+        *set d_presence true
 *goto A
 
 *label Malkavian
-You have chosen to become Malkavian.
 *set clan "Malkavian"
+Every Malkavian is touched by madness — and in that madness, a terrible clarity. They see things others cannot, or will not. Your in-clan Disciplines are Auspex, Dominate, and Obfuscate.
+
+Which comes most naturally to you?
+*choice
+    #Auspex - Heightened senses and psychic perception. The world whispers to you.
+        *set d_auspex true
+    #Dominate - The power to bend minds and issue irresistible commands.
+        *set d_dominate true
+    #Obfuscate - You fade from notice. Not invisibility — simply... overlooked.
+        *set d_obfuscate true
 *goto A
 
 *label Toreador
-You have chosen to become Toreador.
 *set clan "Toreador"
+The Toreador are patrons, artists, and seducers. They chase beauty the way a starving man chases food — desperately, obsessively. Your in-clan Disciplines are Auspex, Celerity, and Presence.
+
+Which comes most naturally to you?
+*choice
+    #Auspex - Heightened senses and psychic perception. Beauty cuts through you like a blade.
+        *set d_auspex true
+    #Celerity - Blinding speed. You move with a grace that mortals cannot follow.
+        *set d_celerity true
+    #Presence - You draw the eye. Emotions bend toward you like iron to a magnet.
+        *set d_presence true
 *goto A
 
 *label Tremere
-You have chosen to become Tremere.
 *set clan "Tremere"
+The Tremere are the youngest clan, and the most mistrusted. They clawed their way into undeath through sorcery, and sorcery remains their greatest weapon. Your in-clan Disciplines are Auspex, Dominate, and Thaumaturgy.
+
+Which comes most naturally to you?
+*choice
+    #Auspex - Heightened senses and psychic perception. Knowledge is power.
+        *set d_auspex true
+    #Dominate - The power to bend minds and issue irresistible commands.
+        *set d_dominate true
+    #Thaumaturgy - Blood magic. You bend the laws of the universe through ritual and will.
+        *set d_thaumaturgy true
 *goto A
 
 *label Nosferatu
-You have chosen to become Nosferatu.
 *set clan "Nosferatu"
+The Embrace is not kind to the Nosferatu. Their bodies are twisted into something monstrous, forcing them to live in the shadows — and in those shadows, they have learned to thrive. Your in-clan Disciplines are Animalism, Obfuscate, and Potence.
+
+Which comes most naturally to you?
+*choice
+    #Animalism - You speak the language of beasts. They obey.
+        *set d_animalism true
+    #Obfuscate - You fade from notice. Easier, when mortals already look away.
+        *set d_obfuscate true
+    #Potence - Crushing strength. Your monstrous form holds monstrous power.
+        *set d_potence true
 *goto A
 
 
 *label A
-To be implemented.
-    
+
 *page_break Attributes
 
 On this page you will determine Duncan's attributes:
@@ -58,7 +110,7 @@ On this page you will determine Duncan's attributes:
 
 *label assignstats
 
-You have ${statpoints} stat points left:
+You have ${statpoints} stat points remaining:
 *if (statpoints < 1)
     *goto statsDone
 *else
@@ -84,7 +136,7 @@ You have ${statpoints} stat points left:
         *goto addWits
     #Resolve - ${resolve}
         *goto addResolve
-    
+
 *label addStrength
 *set strength + 1
 *set statpoints -1
@@ -132,17 +184,18 @@ You have ${statpoints} stat points left:
 
 
 *label statsDone
-You've assigned all stats.  Use the "Show Stats" button to check at any time.
+Your attributes are set.  Use the "Show Stats" button to review them at any time.
 
 *choice
     #Assign Skillpoints manually
         *goto manualskills
     #Answer a Skills survey to assign points automatically
         *goto skillsurvey
-    
+
 *label manualskills
-*set skillpoints 1
+*set skillpoints 12
 *finish Choose your skills
 
 *label skillsurvey
+*set skillpoints 0
 *finish Pop Quiz!

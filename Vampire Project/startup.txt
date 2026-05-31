@@ -64,5 +64,16 @@
 *create s_science 0
 *create s_technology 0
 
+*comment Disciplines
+*create d_animalism false
+*create d_auspex false
+*create d_celerity false
+*create d_dominate false
+*create d_fortitude false
+*create d_obfuscate false
+*create d_potence false
+*create d_presence false
+*create d_thaumaturgy false
+
 
 *finish

@@ -14,12 +14,12 @@ Attributes:
     text Manipulation
     text Composure
 *line_break
-    
+
 *stat_chart
     text Intelligence
     text Wits
     text Resolve
-    
+
 *page_break Skills
 
 Physical Skills:
@@ -59,8 +59,50 @@ Mental Skills:
     text s_politics Politics
     text s_science Science
     text s_technology Technology
-*line_break
 
 *page_break Disciplines
 
-You have no disciplines.  You don't know Kung Fu.
+*if (clan = "Ventrue")
+    [b]Ventrue Disciplines[/b]
+    
+    Dominate: *if (d_dominate) Unlocked *else Locked
+    Fortitude: *if (d_fortitude) Unlocked *else Locked
+    Presence: *if (d_presence) Unlocked *else Locked
+
+*if (clan = "Brujah")
+    [b]Brujah Disciplines[/b]
+    
+    Celerity: *if (d_celerity) Unlocked *else Locked
+    Potence: *if (d_potence) Unlocked *else Locked
+    Presence: *if (d_presence) Unlocked *else Locked
+
+*if (clan = "Malkavian")
+    [b]Malkavian Disciplines[/b]
+    
+    Auspex: *if (d_auspex) Unlocked *else Locked
+    Dominate: *if (d_dominate) Unlocked *else Locked
+    Obfuscate: *if (d_obfuscate) Unlocked *else Locked
+
+*if (clan = "Toreador")
+    [b]Toreador Disciplines[/b]
+    
+    Auspex: *if (d_auspex) Unlocked *else Locked
+    Celerity: *if (d_celerity) Unlocked *else Locked
+    Presence: *if (d_presence) Unlocked *else Locked
+
+*if (clan = "Tremere")
+    [b]Tremere Disciplines[/b]
+    
+    Auspex: *if (d_auspex) Unlocked *else Locked
+    Dominate: *if (d_dominate) Unlocked *else Locked
+    Thaumaturgy: *if (d_thaumaturgy) Unlocked *else Locked
+
+*if (clan = "Nosferatu")
+    [b]Nosferatu Disciplines[/b]
+    
+    Animalism: *if (d_animalism) Unlocked *else Locked
+    Obfuscate: *if (d_obfuscate) Unlocked *else Locked
+    Potence: *if (d_potence) Unlocked *else Locked
+
+*if (clan = "Caitiff")
+    You have not yet chosen a clan.
